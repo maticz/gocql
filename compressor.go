@@ -20,7 +20,8 @@ func (s SnappyCompressor) Name() string {
 }
 
 func (s SnappyCompressor) Encode(data []byte) ([]byte, error) {
-	return snappy.Encode(nil, data)
+	result := snappy.Encode(nil, data)
+	return result, nil
 }
 
 func (s SnappyCompressor) Decode(data []byte) ([]byte, error) {
