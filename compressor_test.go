@@ -4,7 +4,7 @@ package gocql
 
 import (
 	"bytes"
-	"github.com/golang/snappy/snappy"
+	"github.com/golang/snappy"
 	"testing"
 )
 
